@@ -6,16 +6,103 @@
 @theme{
     --font-jost:"Jost";
     --font-Lobster:"Lobster";
+
+
+
 }
+@layer components{
+    .container{
+        @apply mx-auto flex justify-center p-3 md:p-8 ;
+    }
+}
+
+   
+@layer utilities{
+    @keyframes move {
+        50% {
+          transform: translateY(-1rem);
+        }
+      }
+    
+      /* Keyframe: rotate */
+      @keyframes rotate {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    
+      /* Keyframe: scaleUp */
+      @keyframes scaleUp {
+        0% {
+          transform: scale(0.8);
+        }
+        50% {
+          transform: scale(1.2);
+        }
+        100% {
+          transform: scale(0.8);
+        }
+      }
+    
+
+
+
+
+    .animate-movingY {
+        animation: move 3s linear infinite;
+      }
+    
+      .animate-rotating {
+        animation: rotate 15s linear infinite;
+      }
+    
+      .animate-scalingUp {
+        animation: scaleUp 3s linear infinite;
+      }
+}
+    
 
 body{
     @apply bg-green-950 text-white font-jost tracking-wider;
 }
+section{
+    @apply py-20 md:py-28;
+}
+
+h1{
+    @apply text-3xl md:text-4xl xl:text-5xl font-bold;
+}
 
 .nav-link{
-    @apply text-lg font-bold duration-300
+    @apply text-lg font-bold duration-300;
 }
 
 .nav-link:hover{
     @apply text-yellow-500;
 }
+
+.btn{
+    @apply border  border-yellow-500  bg-yellow-500 rounded-md px-5
+    py-2 duration-300;
+}
+
+.btn span{
+
+    @apply font-bold;
+}
+
+.btn:hover{
+    @apply opacity-90;
+}
+
+.btn_outline{
+    @apply bg-transparent;
+}
+
+.btn_outline:hover{
+    @apply bg-yellow-500;
+}
+
