@@ -7,6 +7,15 @@
     --font-jost:"Jost";
     --font-Lobster:"Lobster";
 }
-.container{
-    @apply mx-auto px-4 p-3 md:p-8;
+
+body{
+    @apply bg-green-950 text-white font-jost tracking-wider;
+}
+
+.nav-link{
+    @apply text-lg font-bold duration-300
+}
+
+.nav-link:hover{
+    @apply text-yellow-500;
 }
