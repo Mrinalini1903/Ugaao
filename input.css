@@ -125,3 +125,7 @@ h3{
 .title{
     @apply font-Lobster  text-yellow-500;
 }
+
+.popular_card:hover img{
+  @apply -top-8;
+}
