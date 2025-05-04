@@ -150,3 +150,7 @@ h3{
 .active{
   @apply text-yellow-500;
 }
+
+.footer_content a{
+  @apply hover:underline;
+}
