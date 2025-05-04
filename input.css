@@ -52,6 +52,12 @@
           transform: scale(0.8);
         }
       }
+
+      @keyframes jump {
+        50% {
+          transform: translateY(-0.5rem);
+        }
+      }
     
 
 
@@ -67,6 +73,10 @@
     
       .animate-scalingUp {
         animation: scaleUp 3s linear infinite;
+      }
+
+      .animate-jumpY{
+        animation: move 1.5s ease-out infinite;
       }
 }
     
